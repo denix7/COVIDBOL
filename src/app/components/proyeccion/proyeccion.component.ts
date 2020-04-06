@@ -1,15 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { AgeticApiService } from '../../services/agetic-data';
+
 
 @Component({
   selector: 'app-proyeccion',
   templateUrl: './proyeccion.component.html',
   styleUrls: ['./proyeccion.component.css']
 })
-export class ProyeccionComponent implements OnInit {
+export class ProyeccionComponent implements OnInit{
+  
+  data : any = {};
+  confirmados:number;
+  infectados:string = "Infectdos";
 
-  constructor() { }
+  constructor(public _agetic:AgeticApiService)
+  {
 
-  ngOnInit() {
   }
 
+  ngOnInit()
+  {
+    this._agetic.getData()
+                .subscribe(data => {
+                  this.data = data;
+                })
+  }
 }

@@ -10,6 +10,14 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import { CuidadosComponent } from './components/cuidados/cuidados.component';
 import { ProyeccionComponent } from './components/proyeccion/proyeccion.component';
 
+import { ChartsModule } from 'ng2-charts';
+import { GraficoBarrasComponent } from './components/proyeccion/grafico-barras/grafico-barras.component';
+import { GraficoLineasComponent } from './components/proyeccion/grafico-lineas/grafico-lineas.component';
+
+import { HttpClientModule } from "@angular/common/http";
+
+//services
+import { AgeticApiService } from "./services/agetic-data";
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +26,19 @@ import { ProyeccionComponent } from './components/proyeccion/proyeccion.componen
     AboutComponent,
     InformacionComponent,
     CuidadosComponent,
-    ProyeccionComponent
+    ProyeccionComponent,
+    GraficoBarrasComponent,
+    GraficoLineasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AgeticApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
