@@ -18,6 +18,8 @@ import { HttpClientModule } from "@angular/common/http";
 
 //services
 import { AgeticApiService } from "./services/agetic-data";
+import { GraficoBarrasDepartamentosComponent } from './components/proyeccion/grafico-barras-departamentos/grafico-barras-departamentos.component';
+import { GraficoPieComponent } from './components/proyeccion/grafico-pie/grafico-pie.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { AgeticApiService } from "./services/agetic-data";
     CuidadosComponent,
     ProyeccionComponent,
     GraficoBarrasComponent,
-    GraficoLineasComponent
+    GraficoLineasComponent,
+    GraficoBarrasDepartamentosComponent,
+    GraficoPieComponent
   ],
   imports: [
     BrowserModule,

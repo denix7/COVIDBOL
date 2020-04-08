@@ -12,12 +12,12 @@ export class GraficoLineasComponent {
 
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Infectados' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Recuperados' },
-    { data: [180, 480, 770, 90, 1000, 270, 400], label: 'Bajas', yAxisID: 'y-axis-1' }
+    { data: [0, 107, 87], label: 'Infectados' },
+    { data: [0, 0, 2], label: 'Recuperados' },
+    { data: [0, 6, 14], label: 'Bajas', yAxisID: 'y-axis-1' }
   ];
 
-  public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  public lineChartLabels: Label[] = ['March', 'April', 'May'];
 
   public lineChartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,

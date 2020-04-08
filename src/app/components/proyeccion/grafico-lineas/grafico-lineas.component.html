@@ -1,8 +1,8 @@
-
+<h3 class="text-center mt-5">Grafico de lineas por departamento</h3>
 <div class="flex">
-    <div class="flex-item">
+    <div class="flex-item mt-5">
       <div style="display: block;">
-      <canvas baseChart width="400" height="400"
+      <canvas baseChart width="400" height="250"
                   [datasets]="lineChartData"
                   [labels]="lineChartLabels"
                   [options]="lineChartOptions"
@@ -23,10 +23,5 @@
           <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
         </tr>
       </table>
-      <button class="btn btn-primary btn-block" mat-button mat-raised-button color="primary" (click)="randomize()">Randomize</button>
-      <!-- <button mat-button mat-raised-button color="primary" (click)="pushOne()">Push</button>
-      <button mat-button mat-raised-button color="primary" (click)="changeColor()">Recolor</button>
-      <button mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle Series B</button>
-      <button mat-button mat-raised-button color="primary" (click)="changeLabel()">Change Label</button> -->
     </div>
   </div>
