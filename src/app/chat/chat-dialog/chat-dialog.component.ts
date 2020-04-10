@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatService } from '../chat.service';
+import { ChatService, Message } from '../chat.service';
+// import { Observable } from "rxjs/Observable";
+import 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { scan } from 'rxjs/operators';
 
 @Component({
   selector: 'app-chat-dialog',
@@ -8,10 +12,22 @@ import { ChatService } from '../chat.service';
 })
 export class ChatDialogComponent implements OnInit {
 
+  messages: Observable<Message[]>;
+  formValue:string;
+
   constructor(private chat: ChatService) { }
 
   ngOnInit() {
-    this.chat.talk();
+    // this.chat.talk();
+    this.messages = this.chat.conversation.asObservable()
+                     .pipe(
+                            scan((acc, val) => acc.concat(val)))
+                            console.warn(this.messages);
   }
 
+  sendMessage()
+  {
+    this.chat.converse(this.formValue);
+    this.formValue = '';
+  }
 }
