@@ -20,6 +20,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AgeticApiService } from "./services/agetic-data";
 import { GraficoBarrasDepartamentosComponent } from './components/proyeccion/grafico-barras-departamentos/grafico-barras-departamentos.component';
 import { GraficoPieComponent } from './components/proyeccion/grafico-pie/grafico-pie.component';
+import { ChatModule } from './chat/chat.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { GraficoPieComponent } from './components/proyeccion/grafico-pie/grafico
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChatModule
   ],
   providers: [
     AgeticApiService
