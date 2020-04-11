@@ -21,6 +21,15 @@ import { AgeticApiService } from "./services/agetic-data";
 import { GraficoBarrasDepartamentosComponent } from './components/proyeccion/grafico-barras-departamentos/grafico-barras-departamentos.component';
 import { GraficoPieComponent } from './components/proyeccion/grafico-pie/grafico-pie.component';
 import { ChatModule } from './chat/chat.module';
+
+//firebase
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+import { FormsModule } from '@angular/forms';
+import {CuestionarioService} from './services/cuestionario.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,17 +42,21 @@ import { ChatModule } from './chat/chat.module';
     GraficoBarrasComponent,
     GraficoLineasComponent,
     GraficoBarrasDepartamentosComponent,
-    GraficoPieComponent
+    GraficoPieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
     HttpClientModule,
-    ChatModule
+    ChatModule,
+    FormsModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.configFirebase)
   ],
   providers: [
-    AgeticApiService
+    AgeticApiService,
+    CuestionarioService
   ],
   bootstrap: [AppComponent]
 })
