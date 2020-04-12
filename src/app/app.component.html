@@ -1,8 +1,14 @@
 <app-header></app-header>
 
-<div class="container" id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
-    <router-outlet></router-outlet>
+<div class="">
+    <div class="row">
+        <div class="col-md-9">
+            <router-outlet></router-outlet>
+        </div>
 
-    <app-chat-dialog></app-chat-dialog>
+        <div class="col-md-3 chat">
+            <app-chat-dialog></app-chat-dialog>
+        </div>
+    </div>
+
 </div>

@@ -29,5 +29,12 @@ export class ChatDialogComponent implements OnInit {
   {
     this.chat.converse(this.formValue);
     this.formValue = '';
+    console.log(this.messages);
+
+  }
+
+  printMessages()
+  {
+    console.log(this.messages);
   }
 }
