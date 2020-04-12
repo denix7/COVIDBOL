@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { CuestionarioI } from '../../../model/cuestionario.interface';
-import { CuestionarioService } from '../../services/cuestionario.service';
+import { CuestionarioService, CuestionarioID } from '../../services/cuestionario.service';
 import { NgForm } from '@angular/forms';
+
+import { ModalComponent } from '../modal/modal.component'
 
 
 @Component({
@@ -23,7 +25,14 @@ export class HomeComponent implements OnInit {
     if (cuestionarioForm.value.id == null) {
       this.CuestionarioService.addCuestionario(cuestionarioForm.value);
     }
+    this.onCalculo(cuestionarioForm.value);
+
     cuestionarioForm.resetForm();
   }
-
+  public DataCuestionario: {};
+  onCalculo(cuestionario: CuestionarioService) {
+    this.DataCuestionario = Object.assign({}, cuestionario);
+    console.log('this.DataCuestionario', this.DataCuestionario);
+  }
+  
 }

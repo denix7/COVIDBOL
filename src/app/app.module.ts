@@ -29,6 +29,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { FormsModule } from '@angular/forms';
 import {CuestionarioService} from './services/cuestionario.service';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {CuestionarioService} from './services/cuestionario.service';
     GraficoLineasComponent,
     GraficoBarrasDepartamentosComponent,
     GraficoPieComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
