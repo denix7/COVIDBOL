@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  digalogflow: {
+    angularBot: 'e8112f2a78e84d9492c2f8ae0a904570'
+  }
 };
 
 /*
