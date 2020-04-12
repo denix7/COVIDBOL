@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "covid19cuestionario": {
+      "hosting": {
+        "CuestionarioCovid19": [
+          "covid19cuestionario"
+        ]
+      }
+    }
+  }
+}
