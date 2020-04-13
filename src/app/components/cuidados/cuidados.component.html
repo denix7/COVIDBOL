@@ -1,1 +1,13 @@
-<p>cuidados works!</p>
+<div class="head">
+    <h3 class="text-center mt-5 title">Cuidados y consejos</h3>
+    <p class="text-center subtitle">para la poblacion</p>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div *ngFor="let consejo of consejos" class="card-body">
+            <h5 class="card-title text-center ">{{consejo.title}}</h5>
+            <p class="card-text text-center">{{consejo.content}}</p>
+        </div>
+    </div>
+</div>

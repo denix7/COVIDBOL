@@ -1,0 +1,19 @@
+.title {
+    color:#F5F5F5;
+    font-family: BrowalliaUPC;
+    font-size: 300%;
+}
+
+.subtitle {
+    color: #F5F5F5;
+    font-family: 'Montserrat';
+    letter-spacing: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.head{
+    background-color: #1C1D22;
+    padding: 2em;
+    margin: 1em;
+}

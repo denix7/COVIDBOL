@@ -21,6 +21,7 @@ import { AgeticApiService } from "./services/agetic-data";
 import { GraficoBarrasDepartamentosComponent } from './components/proyeccion/grafico-barras-departamentos/grafico-barras-departamentos.component';
 import { GraficoPieComponent } from './components/proyeccion/grafico-pie/grafico-pie.component';
 import { ChatModule } from './chat/chat.module';
+import { CuidadosService } from "./services/cuidados.service";
 
 //firebase
 import { environment } from '../environments/environment';
@@ -58,7 +59,8 @@ import { ModalComponent } from './components/modal/modal.component';
   ],
   providers: [
     AgeticApiService,
-    CuestionarioService
+    CuestionarioService,
+    CuidadosService
   ],
   bootstrap: [AppComponent]
 })
