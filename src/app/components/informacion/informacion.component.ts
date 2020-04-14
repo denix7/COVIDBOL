@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgeticApiService } from '../../services/agetic-data';
 
 @Component({
   selector: 'app-informacion',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformacionComponent implements OnInit {
 
-  constructor() { }
+  data : any = {};
+  confirmados : number;
+  sospechosos : number;
+  muertes : number;
+  recuperados : number;
 
-  ngOnInit() {
+  constructor(public _agetic : AgeticApiService) 
+  { 
+
+  }
+
+  ngOnInit() 
+  {
+    this._agetic.getData().subscribe(data => {this.data = data; })
   }
 
 }
