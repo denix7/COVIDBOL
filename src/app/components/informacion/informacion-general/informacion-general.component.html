@@ -1,0 +1,34 @@
+<div class="card-deck offset-md-1">
+    <div class="card bg-danger border-danger mb-1" style="max-width: 13rem; max-height: 8rem;">
+        <div class="card-body">
+            <h4 class="card-title"> Confirmados</h4>
+            <div *ngFor="let informacion of confirmadosArray" class="card h-50">
+                <h2 class="text-center">{{confirmadosArray}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-warning mb-3" style="max-width: 13rem; max-height: 8rem;">
+        <div class="card-body">
+            <h4 class="card-title">Sospechosos</h4>
+            <div *ngFor="let informacion of sospechososArray" class="card h-50">
+                <h2 class="text-center">{{sospechososArray}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-info mb-3" style="max-width: 13rem; max-height: 8rem;">
+        <div class="card-body">
+            <h4 class="card-title">Recuperados</h4>
+            <div *ngFor="let informacion of recuperadosArray" class="card h-50">
+                <h2 class="text-center">{{recuperadosArray}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark mb-3" style="max-width: 13rem; max-height: 8rem;">
+        <div class="card-body">
+            <h4 class="card-title text-white">Muertes</h4>
+            <div *ngFor="let informacion of decesosArray" class="card h-50">
+                <h2 class="text-center">{{decesosArray}} | </h2>
+            </div>
+        </div>
+    </div>
+</div>

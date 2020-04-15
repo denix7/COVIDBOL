@@ -3,154 +3,282 @@
     <div class="page-wrapper">
         <!-- Container fluid  -->
         <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3">
-                <h3> INFORMACIONES</h3>
+            <div class="offset-md-1">
+                <app-informacion-general></app-informacion-general>
             </div>
-            <!-- Start First Cards -->
-            <div class="card-deck">
-                <div class="card bg-light mb-3" style="max-width: 13rem;">
-                    <div class="card-header text-center">Casos Confirmados</div>
-                    <!-- <div class="card h-100"> -->
-                        <div class="card-body">
-                            <h1 class="card-title text-center">34</h1>
-                            <p class="card-text">  %</p>
-                        </div>
-                    <!-- </div> -->
-                </div>
-                <div class="card bg-light mb-3" style="max-width: 13rem;">
-                    <div class="card-header text-center">Casos Sospechosos</div>
-                    <div class="card-body">
-                            <h5 class="card-title">200</h5>
-                            <p class="card-text">  %</p>
-                    </div>
-                </div>
-                <div class="card bg-light mb-3" style="max-width: 13rem;">
-                    <div class="card-header text-center">Recuperados</div>
-                    <div class="card-body">
-                            <h5 class="card-title">32</h5>
-                            <p class="card-text">  coger.</p>
-                    </div>
-                </div>
-                <div class="card bg-light mb-3" style="max-width: 13rem;">
-                    <div class="card-header text-center">Muertes</div>
-                    <div class="card-body">
-                            <h5 class="card-title">45</h5>
-                            <p class="card-text">  coger.</p>
-                    </div>
-                </div>
+            <br>
+            <div>
+                <app-informacion-departamentos></app-informacion-departamentos>
             </div>
-            <!-- End First Cards -->
-            <!-- *************************************************************** -->
-            <!-- Start Sales Charts Section -->
-            <!-- *************************************************************** -->
             <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
+                
+                
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Cochabamba</h4>
                         <div class="card-body">
-                            <h4 class="card-title">Total Sales</h4>
-                            <div id="campaign-v2" class="mt-2" style="height:283px; width:100%;"></div>
                             <ul class="list-style-none mb-0">
                                 <li>
                                     <i class="fas fa-circle text-primary font-10 mr-2"></i>
-                                    <span class="text-muted">Direct Sales</span>
-                                    <span class="text-dark float-right font-weight-medium">$2346</span>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
                                 </li>
                                 <li class="mt-3">
                                     <i class="fas fa-circle text-danger font-10 mr-2"></i>
-                                    <span class="text-muted">Referral Sales</span>
-                                    <span class="text-dark float-right font-weight-medium">$2108</span>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
                                 </li>
                                 <li class="mt-3">
                                     <i class="fas fa-circle text-cyan font-10 mr-2"></i>
-                                    <span class="text-muted">Affiliate Sales</span>
-                                    <span class="text-dark float-right font-weight-medium">$1204</span>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">La Paz</h4>
                         <div class="card-body">
-                            <h4 class="card-title">Net Income</h4>
-                            <div class="net-income mt-4 position-relative" style="height:294px;"></div>
-                            <ul class="list-inline text-center mt-5 mb-2">
-                                <li class="list-inline-item text-muted font-italic">Sales for this month</li>
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">El Alto</h4>
                         <div class="card-body">
-                            <h4 class="card-title mb-4">Earning by Location</h4>
-                            <div class="" style="height:180px">
-                                <div id="visitbylocate" style="height:100%"></div>
-                            </div>
-                            <div class="row mb-3 align-items-center mt-1 mt-5">
-                                <div class="col-4 text-right">
-                                    <span class="text-muted font-14">India</span>
-                                </div>
-                                <div class="col-5">
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="col-3 text-right">
-                                    <span class="mb-0 font-14 text-dark font-weight-medium">28%</span>
-                                </div>
-                            </div>
-                            <div class="row mb-3 align-items-center">
-                                <div class="col-4 text-right">
-                                    <span class="text-muted font-14">UK</span>
-                                </div>
-                                <div class="col-5">
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 74%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="col-3 text-right">
-                                    <span class="mb-0 font-14 text-dark font-weight-medium">21%</span>
-                                </div>
-                            </div>
-                            <div class="row mb-3 align-items-center">
-                                <div class="col-4 text-right">
-                                    <span class="text-muted font-14">USA</span>
-                                </div>
-                                <div class="col-5">
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-cyan" role="progressbar" style="width: 60%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="col-3 text-right">
-                                    <span class="mb-0 font-14 text-dark font-weight-medium">18%</span>
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-4 text-right">
-                                    <span class="text-muted font-14">China</span>
-                                </div>
-                                <div class="col-5">
-                                    <div class="progress" style="height: 5px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="col-3 text-right">
-                                    <span class="mb-0 font-14 text-dark font-weight-medium">12%</span>
-                                </div>
-                            </div>
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- *************************************************************** -->
-            <!-- End Sales Charts Section -->
-            <!-- *************************************************************** -->
-            <!-- *************************************************************** -->
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Oruro</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Pando</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Beni</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Potosi</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Sucre</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card bg-light mb-3">
+                        <h4 class="card-header text-center">Tarija</h4>
+                        <div class="card-body">
+                            <ul class="list-style-none mb-0">
+                                <li>
+                                    <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                    <span class="text-muted">Confirmados</span>
+                                    <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2346</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                    <span class="text-muted">Sospechosos</span>
+                                    <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Recuperados</span>
+                                    <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                                    <span class="text-muted">Muertes</span>
+                                    <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Start Location and Earnings Charts Section -->
             <!-- *************************************************************** -->
             <div class="row">

@@ -1,32 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AgeticApiService } from '../../services/agetic-data';
+import { AgeticApiService } from '../../../services/agetic-data';
 
 import { map } from "rxjs/operators";
 
 @Component({
-  selector: 'app-informacion',
-  templateUrl: './informacion.component.html',
-  styleUrls: ['./informacion.component.css']
+  selector: 'app-informacion-general',
+  templateUrl: './informacion-general.component.html',
+  styleUrls: ['./informacion-general.component.css']
 })
-export class InformacionComponent implements OnInit {
-  contador;
+export class InformacionGeneralComponent implements OnInit {
 
+    contador;
   confirmadosArray: number[] = [];
   decesosArray: number[] = [];
   recuperadosArray: number[] = [];
   sospechososArray: number[] = [];
 
-  constructor(public _agetic : AgeticApiService) 
-  { 
-  }
-
-  // ngOnInit() 
-  // {
-  //   this._agetic.getData()
-  //         .subscribe(data => {
-  //           this.data = data; 
-  //   })
-  // }
+  constructor(public _agetic : AgeticApiService) { }
 
   async ngOnInit() {
     await this.getData();
@@ -49,4 +39,5 @@ export class InformacionComponent implements OnInit {
                 .subscribe(() => {
                 });
   }
+
 }
