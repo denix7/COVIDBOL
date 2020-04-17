@@ -32,6 +32,9 @@ import { FormsModule } from '@angular/forms';
 import {CuestionarioService} from './services/cuestionario.service';
 import { ModalComponent } from './components/modal/modal.component';
 
+import { InformacionDepartamentosComponent } from './components/informacion/informacion-departamentos/informacion-departamentos.component';
+import { InformacionGeneralComponent } from './components/informacion/informacion-general/informacion-general.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,8 @@ import { ModalComponent } from './components/modal/modal.component';
     GraficoBarrasDepartamentosComponent,
     GraficoPieComponent,
     ModalComponent,
+    InformacionDepartamentosComponent,
+    InformacionGeneralComponent,
   ],
   imports: [
     BrowserModule,
