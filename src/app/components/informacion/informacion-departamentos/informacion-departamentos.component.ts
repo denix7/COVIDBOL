@@ -11,12 +11,15 @@ import { map } from "rxjs/operators";
 export class InformacionDepartamentosComponent implements OnInit {
   
   departamentos;
+  nombreDepartamentos : any[] = [];
   confirmadosArray: number[] = [];
   decesosArray: number[] = [];
   recuperadosArray: number[] = [];
   sospechososArray: number[] = [];
 
-  constructor(public _agetic : AgeticApiService) { }
+  constructor(public _agetic : AgeticApiService) {
+    this.nombreDepartamentos = ['La Paz', 'Cochabamba', 'Santa Cruz', 'Oruro', 'Potosi', 'Tarija', 'Chuquisaca', 'Beni', 'Pando'];
+  }
 
   async ngOnInit() {
     await this.getData();
@@ -44,16 +47,4 @@ export class InformacionDepartamentosComponent implements OnInit {
                 .subscribe(() => {
                 });
   }
-
-  // public barChartLabels: Label[] = ['La Paz', 'Cochabamba', 'Santa Cruz', 'Oruro', 'Potosi', 'Tarija', 'Chuquisaca', 'Beni', 'Pando'];
-  // public barChartType: ChartType = 'bar';
-  // public barChartLegend = true;
-
-  // public barChartData: ChartDataSets[] = [
-  //   { data: this.confirmadosArray, label: 'Infectados' },
-  //   { data: this.decesosArray, label: 'Bajas' },
-  //   { data: this.recuperadosArray, label: 'Recuperados' },
-  //   { data: this.sospechososArray, label: 'Sospechosos' }
-  // ];
-
 }

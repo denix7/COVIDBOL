@@ -1,37 +1,38 @@
 
-<!-- <div *ngFor="let inf of arrayOfDepa" > -->
-    <!-- <h2 class="text-center">{{confirmadosArray}}</h2> -->
-<!-- como obtener los datos arrayOfDepa  -->
-
-    <div class="col-lg-3 col-md-12">
+<div class="row row-cols-1 row-cols-md-3">
+<div *ngFor="let nombreDep of nombreDepartamentos; let i = index ">
+    <div class="col-lg-10 offset-md-1 col-md-12">
         <div class="card bg-light mb-3">
-            <h4 class="card-header text-center">Santa Cruz</h4>
+            <h4 class="card-header text-center">{{nombreDep}}</h4>
             <div class="card-body">
                 <ul class="list-style-none mb-0">
                     <li>
                         <i class="fas fa-circle text-primary font-10 mr-2"></i>
                         <span class="text-muted">Confirmados</span>
                         <span class="btn btn-danger rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">
-                            46</span>
-                        
-                    </li>
-                    <li class="mt-3">
-                        <i class="fas fa-circle text-danger font-10 mr-2"></i>
-                        <span class="text-muted">Sospechosos</span>
-                        <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">2108</span>
-                    </li>
-                    <li class="mt-3">
-                        <i class="fas fa-circle text-cyan font-10 mr-2"></i>
-                        <span class="text-muted">Recuperados</span>
-                        <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                            {{confirmadosArray[i]}}</span>
                     </li>
                     <li class="mt-3">
                         <i class="fas fa-circle text-cyan font-10 mr-2"></i>
                         <span class="text-muted">Muertes</span>
-                        <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">1204</span>
+                        <span class="btn btn-dark rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">
+                            {{decesosArray[i]}}</span>
+                    </li>
+                    <li class="mt-3">
+                        <i class="fas fa-circle text-danger font-10 mr-2"></i>
+                        <span class="text-muted">Sospechosos</span>
+                        <span class="btn btn-warning rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">
+                            {{sospechososArray[i]}}</span>
+                    </li>
+                    <li class="mt-3">
+                        <i class="fas fa-circle text-cyan font-10 mr-2"></i>
+                        <span class="text-muted">Recuperados</span>
+                        <span class="btn btn-info rounded-circle btn-circle font-12 popover-item btn-sm float-right font-weight-medium">
+                            {{recuperadosArray[i]}}</span>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-<!-- </div> -->
+</div>
+</div>
