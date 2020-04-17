@@ -1,0 +1,14 @@
+.card-header{
+    background-color: var(--bg-body-primary);
+}
+
+.card-body{
+   background-color: var(--bg-primary);
+}
+
+.list-style-none
+{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}

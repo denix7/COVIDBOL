@@ -1,0 +1,14 @@
+.card{
+    background-color: var(--bg-body-primary);
+    color: var(--text-primary);
+}
+
+.card-header{
+    background-color: var(--bg-body-primary);
+    color: var(--text-primary);
+}
+
+.card-body{
+   background-color: var(--bg-primary);
+   color: var(--text-primary);
+}
