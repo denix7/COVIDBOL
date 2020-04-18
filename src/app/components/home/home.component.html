@@ -1,5 +1,5 @@
 <img src="../../../assets/images/audi.png" alt="" class="img-fluid width:15px">
-<form class="text-center border border-light p-5" name="formCuestionario" #formCuestionario="ngForm"
+<form class="text-center border border-light p-5 was-validated" name="formCuestionario" #formCuestionario="ngForm"
     (ngSubmit)="onSaveCuestionario(formCuestionario)">
 
     <p class="h4 mb-4">AUTOCUESTIONARIO COVID-19</p>
@@ -9,14 +9,13 @@
             <label for="tos">Estas con tos?</label>
         </div>
         <div class="col">
-
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="tos" id="tos"
+                <input class="form-check-input is-invalid" type="radio" name="tos" id="tos" required
                     [(ngModel)]="this.CuestionarioService.selected.tos" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="tos" id="tos"
+                <input class="form-check-input is-invalid" type="radio" name="tos" id="tos" required
                     [(ngModel)]="this.CuestionarioService.selected.tos" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -29,12 +28,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="escalofrios" id="escalofrios"
+                <input class="form-check-input" type="radio" name="escalofrios" id="escalofrios" required
                     [(ngModel)]="this.CuestionarioService.selected.escalofrios" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="escalofrios" id="escalofrios"
+                <input class="form-check-input" type="radio" name="escalofrios" id="escalofrios" required
                     [(ngModel)]="this.CuestionarioService.selected.escalofrios" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -47,12 +46,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="diarrea" id="diarrea"
+                <input class="form-check-input" type="radio" name="diarrea" id="diarrea" required
                     [(ngModel)]="this.CuestionarioService.selected.diarrea" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="diarrea" id="diarrea"
+                <input class="form-check-input" type="radio" name="diarrea" id="diarrea" required
                     [(ngModel)]="this.CuestionarioService.selected.diarrea" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -65,12 +64,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="garganta" id="garganta"
+                <input class="form-check-input" type="radio" name="garganta" id="garganta" required
                     [(ngModel)]="this.CuestionarioService.selected.garganta" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="garganta" id="garganta"
+                <input class="form-check-input" type="radio" name="garganta" id="garganta" required
                     [(ngModel)]="this.CuestionarioService.selected.garganta" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -84,12 +83,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="dolorGeneral" id="dolorGeneral"
+                <input class="form-check-input" type="radio" name="dolorGeneral" id="dolorGeneral" required
                     [(ngModel)]="this.CuestionarioService.selected.dolorGeneral" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="dolorGeneral" id="dolorGeneral"
+                <input class="form-check-input" type="radio" name="dolorGeneral" id="dolorGeneral" required
                     [(ngModel)]="this.CuestionarioService.selected.dolorGeneral" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -102,12 +101,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="cabeza" id="cabeza"
+                <input class="form-check-input" type="radio" name="cabeza" id="cabeza" required
                     [(ngModel)]="this.CuestionarioService.selected.cabeza" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="cabeza" id="cabeza"
+                <input class="form-check-input" type="radio" name="cabeza" id="cabeza" required
                     [(ngModel)]="this.CuestionarioService.selected.cabeza" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -120,12 +119,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="fiebre" id="fiebre"
+                <input class="form-check-input" type="radio" name="fiebre" id="fiebre" required
                     [(ngModel)]="this.CuestionarioService.selected.fiebre" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="fiebre" id="fiebre"
+                <input class="form-check-input" type="radio" name="fiebre" id="fiebre" required
                     [(ngModel)]="this.CuestionarioService.selected.fiebre" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -138,12 +137,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="olfato" id="olfato"
+                <input class="form-check-input" type="radio" name="olfato" id="olfato" required
                     [(ngModel)]="this.CuestionarioService.selected.olfato" value=1>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="olfato" id="olfato"
+                <input class="form-check-input" type="radio" name="olfato" id="olfato" required
                     [(ngModel)]="this.CuestionarioService.selected.olfato" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -156,12 +155,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="respirar" id="respirar"
+                <input class="form-check-input" type="radio" name="respirar" id="respirar" required
                     [(ngModel)]="this.CuestionarioService.selected.respirar" value=2>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="respirar" id="respirar"
+                <input class="form-check-input" type="radio" name="respirar" id="respirar" required
                     [(ngModel)]="this.CuestionarioService.selected.respirar" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -175,12 +174,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="fatiga" id="fatiga"
+                <input class="form-check-input" type="radio" name="fatiga" id="fatiga" required
                     [(ngModel)]="this.CuestionarioService.selected.fatiga" value=2>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="fatiga" id="fatiga"
+                <input class="form-check-input" type="radio" name="fatiga" id="fatiga" required
                     [(ngModel)]="this.CuestionarioService.selected.fatiga" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -193,12 +192,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="viajo" id="viajo"
+                <input class="form-check-input" type="radio" name="viajo" id="viajo" required
                     [(ngModel)]="this.CuestionarioService.selected.viajo" value=3>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="viajo" id="viajo"
+                <input class="form-check-input" type="radio" name="viajo" id="viajo" required
                     [(ngModel)]="this.CuestionarioService.selected.viajo" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -211,12 +210,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="estado" id="estado"
+                <input class="form-check-input" type="radio" name="estado" id="estado" required
                     [(ngModel)]="this.CuestionarioService.selected.estado" value=3>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="estado" id="estado"
+                <input class="form-check-input" type="radio" name="estado" id="estado" required
                     [(ngModel)]="this.CuestionarioService.selected.estado" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -230,12 +229,12 @@
         </div>
         <div class="col">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="contacto" id="contacto"
+                <input class="form-check-input" type="radio" name="contacto" id="contacto" required
                     [(ngModel)]="this.CuestionarioService.selected.contacto" value=3>
                 <label class="form-check-label" for="yes">Si</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="contacto" id="contacto"
+                <input class="form-check-input" type="radio" name="contacto" id="contacto" required
                     [(ngModel)]="this.CuestionarioService.selected.contacto" value=0>
                 <label class="form-check-label" for="not">No</label>
             </div>
@@ -246,7 +245,7 @@
             <label for="departamento">Departamento:</label>
         </div>
         <div class="col">
-            <select name="departamento" class="form-control"
+            <select name="departamento" class="form-control" required
                 [(ngModel)]="this.CuestionarioService.selected.departamento">
                 <option selected>Seleccione su departamento</option>
                 <option value="laPaz">La Paz</option>
@@ -264,12 +263,30 @@
     </div>
 
     <hr>
-    <button type="submit" class="btn btn-primary">CALCULAR RESULTADO</button>
+    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">CALCULAR
+        RESULTADO</button>
     <hr>
     <p> SI AUN TIENE DUDAS VUELVA A REALIZAR EL CUESTIONARIO EN 2 DIAS </p>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">{{titulo}} </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3> {{resultado}}</h3>
+
+                    <h4>{{Recomendacion}}</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </form>
-
-<div *ngIf="enviado">
-    <app-modal></app-modal>
-</div>
