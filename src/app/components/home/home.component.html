@@ -262,9 +262,14 @@
             </select>
         </div>
     </div>
-         <hr>
-        <button type="submit" class="btn btn-primary">CALCULAR RESULTADO</button>
 
-        <p> SI AUN TIENE DUDAS VUELVA A REALIZAR EL CUESTIONARIO EN 2 DIAS </p>
+    <hr>
+    <button type="submit" class="btn btn-primary">CALCULAR RESULTADO</button>
+    <hr>
+    <p> SI AUN TIENE DUDAS VUELVA A REALIZAR EL CUESTIONARIO EN 2 DIAS </p>
 
 </form>
+
+<div *ngIf="enviado">
+    <app-modal></app-modal>
+</div>

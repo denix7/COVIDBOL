@@ -13,7 +13,7 @@ export class CuestionarioService {
 
   private cuestionarioCollection: AngularFirestoreCollection<CuestionarioI>;
   cuestionario: Observable<CuestionarioID[]>;
-  
+
   public selected = {
     tos: 0,
     escalofrios: 0,
@@ -28,7 +28,8 @@ export class CuestionarioService {
     viajo: 0,
     estado: 0,
     contacto: 0,
-    departamento: ''
+    departamento: '',
+    resultado: 0
   }
   constructor(private readonly afs: AngularFirestore) {
     this.cuestionarioCollection = afs.collection<CuestionarioI>('cuestionarios');

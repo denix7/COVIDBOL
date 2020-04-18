@@ -18,21 +18,24 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // this.CuestionarioService.getAllCuestionarios().subscribe(res => console.log(res));
   }
+  public enviado = false;
 
   onSaveCuestionario(cuestionarioForm: NgForm): void {
     if (cuestionarioForm.value.id == null) {
       this.CuestionarioService.addCuestionario(cuestionarioForm.value);
     }
-    this.onCalculo(cuestionarioForm.value);
-
+    this.onCalculo();
+    this.enviado = true;
     cuestionarioForm.resetForm();
+    // this.enviado=false;
   }
-  public DataCuestionario: {};
-  onCalculo(cuestionario: CuestionarioService) {
-    this.DataCuestionario = Object.assign({}, cuestionario);
-    console.log('this.DataCuestionario', this.DataCuestionario);
+  public resultado: number = 0;
+
+  onCalculo() {
+    this.resultado = 111111;
+    console.log(this.resultado);
   }
-  
+
+
 }
