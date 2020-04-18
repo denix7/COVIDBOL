@@ -42,8 +42,8 @@ export class HomeComponent implements OnInit {
       this.Recomendacion = "Datos incompletos";
       this.todoBien = false;
     }
-    if (cuestionarioForm.value.departamento ==="") {
-      this.Recomendacion = "Falta llenar departamento";
+    if (cuestionarioForm.value.departamento === "") {
+      this.Recomendacion = "Datos incompletos";
       this.todoBien = false;
     }
     if (this.todoBien == true) {
