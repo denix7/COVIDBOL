@@ -46,6 +46,7 @@ export class HomeComponent implements OnInit {
       this.Recomendacion = "Datos incompletos";
       this.todoBien = false;
     }
+    console.log(this.todoBien);
     if (this.todoBien == true) {
       this.titulo = "El resultado es: ";
       this.onCalculo(calCuestionario);
@@ -53,14 +54,21 @@ export class HomeComponent implements OnInit {
         this.CuestionarioService.addCuestionario(cuestionarioForm.value);
       }
       this.enviado = true;
+      console.log(cuestionarioForm.value);
       cuestionarioForm.resetForm();
+      cuestionarioForm.value.tos = -1;
+
+    } else {
+      this.titulo = "";
+      this.res=0;
     }
     this.todoBien = true;
   }
 
-  public resultado: number;
+  public res = 0;
+
   onCalculo(cuestionario) {
-    this.resultado =
+    this.res =
       parseInt(cuestionario.tos) +
       parseInt(cuestionario.escalofrios) +
       parseInt(cuestionario.diarrea) +
@@ -76,19 +84,18 @@ export class HomeComponent implements OnInit {
       parseInt(cuestionario.contacto)
       ;
     this.enviado = false;
-    if (this.resultado >= 0 && this.resultado < 3) {
+    if (this.res >= 0 && this.res < 3) {
       this.Recomendacion = "PODRIA SER ESTRES, TOME PRECAUCIONES Y ESPPERE";
     }
-    if (this.resultado >= 3 && this.resultado <= 5) {
+    if (this.res >= 3 && this.res <= 5) {
       this.Recomendacion = "HIDRATESE, CONSERVE LAS MEDIDAS DE HIGIENE, OBSERVE Y REVALUE EN 2 DIAS";
     }
-    if (this.resultado >= 6 && this.resultado <= 11) {
+    if (this.res >= 6 && this.res <= 11) {
       this.Recomendacion = "ACUDA AL MEDICO";
     }
-    if (this.resultado > 12) {
+    if (this.res > 12) {
       this.Recomendacion = "LLAME AL 800 10 1104 O AL 800 10 1106 PARA REALIZAR LA DETECCION DE COVID-19";
     }
 
   }
-
 }
