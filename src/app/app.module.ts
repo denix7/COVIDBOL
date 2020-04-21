@@ -35,6 +35,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { InformacionDepartamentosComponent } from './components/informacion/informacion-departamentos/informacion-departamentos.component';
 import { InformacionGeneralComponent } from './components/informacion/informacion-general/informacion-general.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,8 +61,10 @@ import { InformacionGeneralComponent } from './components/informacion/informacio
     ChatModule,
     FormsModule,
     AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.configFirebase)
+    AngularFireModule.initializeApp(environment.configFirebase),
+   
   ],
+  exports:[ModalComponent],
   providers: [
     AgeticApiService,
     CuestionarioService,

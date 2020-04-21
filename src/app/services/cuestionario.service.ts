@@ -13,22 +13,23 @@ export class CuestionarioService {
 
   private cuestionarioCollection: AngularFirestoreCollection<CuestionarioI>;
   cuestionario: Observable<CuestionarioID[]>;
-  
+
   public selected = {
-    tos: 0,
-    escalofrios: 0,
-    diarrea: 0,
-    garganta: 0,
-    dolorGeneral: 0,
-    cabeza: 0,
-    fiebre: 0,
-    olfato: 0,
-    respirar: 0,
-    fatiga: 0,
-    viajo: 0,
-    estado: 0,
-    contacto: 0,
-    departamento: ''
+    tos: -1,
+    escalofrios: -1,
+    diarrea: -1,
+    garganta: -1,
+    dolorGeneral: -1,
+    cabeza: -1,
+    fiebre: -1,
+    olfato: -1,
+    respirar: -1,
+    fatiga: -1,
+    viajo: -1,
+    estado: -1,
+    contacto: -1,
+    departamento: '',
+    resultado: -1
   }
   constructor(private readonly afs: AngularFirestore) {
     this.cuestionarioCollection = afs.collection<CuestionarioI>('cuestionarios');

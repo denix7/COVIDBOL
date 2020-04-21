@@ -12,5 +12,6 @@ export interface CuestionarioI {
     viajo: number,
     estado: number,
     contacto: number,
-    departamento: ''
+    departamento: string,
+    resultado: number
 }
