@@ -34,6 +34,7 @@ import { ModalComponent } from './components/modal/modal.component';
 
 import { InformacionDepartamentosComponent } from './components/informacion/informacion-departamentos/informacion-departamentos.component';
 import { InformacionGeneralComponent } from './components/informacion/informacion-general/informacion-general.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { InformacionGeneralComponent } from './components/informacion/informacio
     FormsModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.configFirebase),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
    
   ],
   exports:[ModalComponent],
