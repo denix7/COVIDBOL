@@ -22,7 +22,6 @@ jobs:
       with:
         node-version: '10.x'
     # Runs commands using the runners shell
-    - name: Run a one-line script
     - run: npm install
     - run: npm run build
     - uses: w9jds/firebase-action@master
