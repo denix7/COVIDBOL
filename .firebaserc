@@ -1,14 +1,5 @@
 {
-  "targets": {
-    "covid19cuestionario": {
-      "hosting": {
-        "CuestionarioCovid19": [
-          "covid19cuestionario"
-        ]
-      }
-    }
-  },
   "projects": {
-    "default": "covid19cuestionario"
+    "default": "ngcovidbol"
   }
 }
