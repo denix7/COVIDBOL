@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Demo
+https://ngcovidbol.web.app/
+
+## Screenshot
+![2020-07-01-20-57-ngcovidbol web app](https://user-images.githubusercontent.com/30157934/86304654-8b73a580-bbdd-11ea-8a5c-2d090467256c.png)
